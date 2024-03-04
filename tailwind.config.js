@@ -6,11 +6,15 @@ export default {
   ],
   darkMode: "class",
   theme: {
+    screens:{
+      'celular': '150px',
+      'lg': '1024px'
+    },
     extend: {
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'rotate(-1deg)' },
-          '50%': { transform: 'rotate(1deg)' },
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
         }
       },
       fontFamily:{
