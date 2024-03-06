@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Fade } from "react-awesome-reveal"
 import { TypeAnimation } from "react-type-animation"
 
-
+import * as Dialog from '@radix-ui/react-dialog';
 
 import { Moon } from 'lucide-react';
 import { Sun } from 'lucide-react';
@@ -19,6 +19,7 @@ export function App() {
     <div className="mx-auto px-5">
       <div className={`${darkMode && "dark"} min-h-screen`}>
         <Fade cascade damping={0.2} triggerOnce={true}>
+          <Dialog.Root>
         <main className="min-h-screen dark:bg-zinc-900 bg-slate-200 outline-none selection:bg-red-500 overflow-hidden">
           <div className="h-48">
           <Fade direction="down">
@@ -64,8 +65,11 @@ export function App() {
                         <span className=" bg-zinc-800 p-3 rounded-2xl">
                           "You dont need to make, I do"
                         </span>
-                        
+
+
                       </blockquote>
+                                              
+
                         
                        
 
@@ -115,11 +119,17 @@ export function App() {
                                     <div className="animate-spining">+</div>
                               </div>
                   </div> 
+
               </div>
 
                     
               </Fade>
               </div>
+              
+                        <Dialog.Trigger asChild>
+                          <button className="transition ease-in-out hover:-translate-y-1 hover:scale-110 absolute right-1/4 bottom-1/4 text-violet11  hover:shadow-glowing inline-flex h-[35px] items-center justify-center rounded-[20px] border-solid border-4 border-green-500 dark:border-green-600 dark:text-green-500 dark:hover:border-indigo-600 dark:hover:text-indigo-600 text-green-500 py-[50px] px-[120px] font-JetBrains leading-none text-2xl  focus:outline-none">Call-me</button>
+                        </Dialog.Trigger>
+                        
 
           <div className="dark:bg-zinc-900 bg-slate-300">
 
@@ -128,8 +138,9 @@ export function App() {
 
           </div>
         </main>
+        </Dialog.Root>
         </Fade>
-        <button onClick={toggleDarkMode} className="absolute w-16 h-16 right-16 bottom-16 p-4 rounded-full font-medium font-Danci dark:bg-slate-200 bg-zinc-900 text-slate-200 dark:text-zinc-950">
+        <button onClick={toggleDarkMode} className="absolute w-16 h-16 right-16 bottom-16 p-4 rounded-full font-medium font-Danci dark:bg-slate-200 bg-zinc-900 text-slate-200 dark:text-zinc-900">
             {darkMode ? <Sun className="absolute w-8 h-8 left-4 top-4"/> : <Moon className="absolute w-8 h-8 left-4 top-4"/>}
           </button>
       </div>

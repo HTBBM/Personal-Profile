@@ -11,6 +11,9 @@ export default {
       'lg': '1024px'
     },
     extend: {
+      boxShadow: {
+          'glowing': '0 0 35px #4f46e5',
+        },
       keyframes: {
         spining: {
           '0%, 100%': { transform: 'rotate(-270deg)' },
