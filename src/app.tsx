@@ -2,6 +2,8 @@ import { useState } from "react"
 import { Fade } from "react-awesome-reveal"
 import { TypeAnimation } from "react-type-animation"
 
+
+
 import { Moon } from 'lucide-react';
 import { Sun } from 'lucide-react';
 
@@ -58,26 +60,62 @@ export function App() {
                         repeat={Infinity}
                       />
                       
-                      <blockquote className="dark:text-slate-200 text-3xl lg:text-left mt-14">
+                      <blockquote className=" dark:text-slate-200 text-xl lg:text-left mt-14">
                         <span className=" bg-zinc-800 p-3 rounded-2xl">
-                          ""
+                          "You dont need to make, I do"
                         </span>
+                        
                       </blockquote>
                         
                        
 
                       </h1>
-              <span className=" celular:relative grid grid-cols-3 p-0 celular:text-center celular:text-sm lg:left-72 font-JetBrains celular:m-8 celular:top-8 font-bold lg:top-16 lg:text-3xl dark:text-slate-200">
-                          <a className="  ">+</a>
-                          <span>+</span>
-                          <span>+</span>
-                          <span>+</span>
-                          <span>+</span>
-                          <span>+</span>
-                          <span>+</span>
-                          <span>+</span>
-                          <span>+</span>
-              </span> 
+            <div className="flex flex-col translate-x-1/2 -translate-y-3/4 opacity-45">
+              <div className=" celular:relative max-w-lgflex-wrap  celular:text-center celular:text-sm lg:left-72 font-JetBrains celular:m-8 celular:top-8 font-bold lg:top-16 lg:text-3xl dark:text-slate-200">
+                          <div className="flex gap-10">
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                          </div>
+              </div> 
+              <div className=" celular:relative max-w-lgflex-wrap  celular:text-center celular:text-sm lg:left-72 font-JetBrains celular:m-8 celular:top-8 font-bold lg:top-16 lg:text-3xl dark:text-slate-200">
+                          <div className="flex gap-10">
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                          </div>
+              </div> 
+              <div className=" celular:relative max-w-lgflex-wrap  celular:text-center celular:text-sm lg:left-72 font-JetBrains celular:m-8 celular:top-8 font-bold lg:top-16 lg:text-3xl dark:text-slate-200">
+                          <div className="flex gap-10">
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                                <div className="animate-spining">+</div>
+                          </div>
+              </div>
+                  <div className=" celular:relative max-w-lgflex-wrap  celular:text-center celular:text-sm lg:left-72 font-JetBrains celular:m-8 celular:top-8 font-bold lg:top-16 lg:text-3xl dark:text-slate-200">
+                              <div className="flex gap-10">
+                                    <div className="animate-spining">+</div>
+                                    <div className="animate-spining">+</div>
+                                    <div className="animate-spining">+</div>
+                                    <div className="animate-spining">+</div>
+                                    <div className="animate-spining">+</div>
+                                    <div className="animate-spining">+</div>
+                                    <div className="animate-spining">+</div>
+                              </div>
+                  </div> 
+              </div>
 
                     
               </Fade>

@@ -12,10 +12,14 @@ export default {
     },
     extend: {
       keyframes: {
+        spining: {
+          '0%, 100%': { transform: 'rotate(-270deg)' },
+          '50%': { transform: 'rotate(3deg)'},
+        },
         wiggle: {
           '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        }
+          '50%': { transform: 'rotate(3deg)'},
+        },
       },
       fontFamily:{
         Inter: ["Inter", "sans-serif"],
@@ -26,6 +30,7 @@ export default {
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
+        spining: 'spining 5s ease-in-out infinite'
       }
     },
   },
