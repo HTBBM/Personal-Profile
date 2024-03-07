@@ -4,8 +4,13 @@ import { TypeAnimation } from "react-type-animation"
 
 import * as Dialog from '@radix-ui/react-dialog';
 
+
 import { Moon } from 'lucide-react';
 import { Sun } from 'lucide-react';
+
+import { WorkRequest } from "./Work-Request";
+import { Background_spining } from "./components/+";
+
 
 export function App() {
 
@@ -14,6 +19,8 @@ export function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   }
+
+
 
   return(
     <div className="mx-auto px-5">
@@ -65,59 +72,27 @@ export function App() {
                         <span className=" bg-zinc-800 p-3 rounded-2xl">
                           "You dont need to make, I do"
                         </span>
-
-
                       </blockquote>
-                                              
-
-                        
-                       
 
                       </h1>
             <div className="flex flex-col translate-x-1/2 -translate-y-3/4 opacity-45">
               <div className=" celular:relative max-w-lgflex-wrap  celular:text-center celular:text-sm lg:left-72 font-JetBrains celular:m-8 celular:top-8 font-bold lg:top-16 lg:text-3xl dark:text-slate-200">
                           <div className="flex gap-10">
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
+                              <Background_spining/>
                           </div>
               </div> 
               <div className=" celular:relative max-w-lgflex-wrap  celular:text-center celular:text-sm lg:left-72 font-JetBrains celular:m-8 celular:top-8 font-bold lg:top-16 lg:text-3xl dark:text-slate-200">
                           <div className="flex gap-10">
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
+                              <Background_spining/>
                           </div>
               </div> 
               <div className=" celular:relative max-w-lgflex-wrap  celular:text-center celular:text-sm lg:left-72 font-JetBrains celular:m-8 celular:top-8 font-bold lg:top-16 lg:text-3xl dark:text-slate-200">
                           <div className="flex gap-10">
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
-                                <div className="animate-spining">+</div>
+                              <Background_spining/>
                           </div>
               </div>
                   <div className=" celular:relative max-w-lgflex-wrap  celular:text-center celular:text-sm lg:left-72 font-JetBrains celular:m-8 celular:top-8 font-bold lg:top-16 lg:text-3xl dark:text-slate-200">
-                              <div className="flex gap-10">
-                                    <div className="animate-spining">+</div>
-                                    <div className="animate-spining">+</div>
-                                    <div className="animate-spining">+</div>
-                                    <div className="animate-spining">+</div>
-                                    <div className="animate-spining">+</div>
-                                    <div className="animate-spining">+</div>
-                                    <div className="animate-spining">+</div>
-                              </div>
+                              <Background_spining/>
                   </div> 
 
               </div>
@@ -126,10 +101,10 @@ export function App() {
               </Fade>
               </div>
               
-                        <Dialog.Trigger asChild>
-                          <button className="transition ease-in-out hover:-translate-y-1 hover:scale-110 absolute right-1/4 bottom-1/4 text-violet11  hover:shadow-glowing inline-flex h-[35px] items-center justify-center rounded-[20px] border-solid border-4 border-green-500 dark:border-green-600 dark:text-green-500 dark:hover:border-indigo-600 dark:hover:text-indigo-600 text-green-500 py-[50px] px-[120px] font-JetBrains leading-none text-2xl  focus:outline-none">Call-me</button>
-                        </Dialog.Trigger>
-                        
+              <Dialog.Trigger asChild>
+                  <button className="transition ease-in-out hover:-translate-y-1 hover:scale-110 absolute right-1/4 bottom-1/4 text-violet11  hover:shadow-glowing inline-flex h-[35px] items-center justify-center rounded-[20px] border-solid border-4 border-green-500 dark:border-green-600 dark:text-green-500 dark:hover:border-indigo-600 dark:hover:text-indigo-600 text-green-500 py-[50px] px-[120px] font-JetBrains leading-none text-2xl  focus:outline-none">Call-me</button>
+               </Dialog.Trigger>
+               <WorkRequest />
 
           <div className="dark:bg-zinc-900 bg-slate-300">
 
