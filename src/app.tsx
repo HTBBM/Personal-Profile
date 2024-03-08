@@ -11,8 +11,6 @@ import { EmailForm } from "./Work-Request";
 import { Background_spining } from "./components/+";
 
 
-
-
 export function App() {
 
   const [darkMode, setDarkMode] = useState(true)
@@ -20,8 +18,6 @@ export function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   }
-
-
 
   return(
     <div className="mx-auto px-5">

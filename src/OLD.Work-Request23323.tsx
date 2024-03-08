@@ -2,7 +2,6 @@ import * as Dialog from '@radix-ui/react-dialog';
 import * as Form from '@radix-ui/react-form';
 
 
-import { sendMail } from './components';
 
 
 <script src="./src/app.tsx"> </script>
@@ -87,7 +86,7 @@ export function WorkRequest(){
                                               </Form.Control>
                                             </Form.Field>
                                             <Form.Submit asChild>
-                                              <button type="submit" onClick={sendMail} className="box-border w-full text-violet11 shadow-blackA4 hover:bg-mauve3 inline-flex h-[35px] items-center justify-center rounded-[20px] hover:bg-indigo-600 hover:text-slate-200 bg-zinc-900 border-4 text-green-400 border-green-500 border-solid bg-none p-[20px] font-medium leading-none shadow-[0_2px_10px]  outline-none mt-[2px]">
+                                              <button type="submit" className="box-border w-full text-violet11 shadow-blackA4 hover:bg-mauve3 inline-flex h-[35px] items-center justify-center rounded-[20px] hover:bg-indigo-600 hover:text-slate-200 bg-zinc-900 border-4 text-green-400 border-green-500 border-solid bg-none p-[20px] font-medium leading-none shadow-[0_2px_10px]  outline-none mt-[2px]">
                                                 Send Work
                                               </button>
                                               
