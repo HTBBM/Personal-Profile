@@ -4,12 +4,13 @@ import { TypeAnimation } from "react-type-animation"
 
 import * as Dialog from '@radix-ui/react-dialog';
 
-
 import { Moon } from 'lucide-react';
 import { Sun } from 'lucide-react';
 
-import { WorkRequest } from "./Work-Request";
+import { EmailForm } from "./Work-Request";
 import { Background_spining } from "./components/+";
+
+
 
 
 export function App() {
@@ -24,6 +25,7 @@ export function App() {
 
   return(
     <div className="mx-auto px-5">
+      
       <div className={`${darkMode && "dark"} min-h-screen`}>
         <Fade cascade damping={0.2} triggerOnce={true}>
           <Dialog.Root>
@@ -104,7 +106,7 @@ export function App() {
               <Dialog.Trigger asChild>
                   <button className="transition ease-in-out hover:-translate-y-1 hover:scale-110 absolute right-1/4 bottom-1/4 text-violet11  hover:shadow-glowing inline-flex h-[35px] items-center justify-center rounded-[20px] border-solid border-4 border-green-500 dark:border-green-600 dark:text-green-500 dark:hover:border-indigo-600 dark:hover:text-indigo-600 text-green-500 py-[50px] px-[120px] font-JetBrains leading-none text-2xl  focus:outline-none">Call-me</button>
                </Dialog.Trigger>
-               <WorkRequest />
+               <EmailForm />
 
           <div className="dark:bg-zinc-900 bg-slate-300">
 
